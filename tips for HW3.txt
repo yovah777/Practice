@@ -1,0 +1,47 @@
+tip: use media query for break points 
+and change size of images to a smaller value than original size.
+
+instructs 1:1 relationship, page matches screens width in device-independ
+add to head
+<meta name="viewport" content="width=device-width,
+initial-scale=1">
+
+use rel unit so content stretches,etc. ex for height, width use 100% NOT auto or pixel size
+same div elements
+
+ex.media query
+@media screen and (max-width: 600px){
+ #container {
+ width: 100%;
+ }
+ #left-column {
+ width: 70%;
+ }
+ #right-column {	**for adjusting last col. width in mobile window version
+ width: 30%;
+ }
+ }
+
+tip: maybe change background colors for different size viewports
+
+media query expression to test size of viewport
+@media screen and (min-width: 481px) and (max-width: 768px){
+ #container { width: 100%;}
+}
+
+Javascript link file
+<script src="fileName.js" type="text/javascript"></script> (in header)
+	To figure out problems with syntax look at console
+		ex. console.log(x); // used for testing if var work
+
+var not blockscoped
+let and const are blockscoped
+		Tip:
+	Use ‘const’ as much as you can.
+	Use ‘let’ only when you really need to.
+	Avoid using ’var’
+
+functions are like objects (ref. lect 5)
+
+Load jquery into your webpage
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
